@@ -1,6 +1,8 @@
 # Feature Prominence Score
 
-This repository contains resources and links related to the research on the Feature Prominence Score.
+This repository contains resources and links related to the research on the Feature Prominence Score. 
+
+NOTE: An optimized version is currently under development.
 
 ## Table of Contents
 - [Publication](#publication)
