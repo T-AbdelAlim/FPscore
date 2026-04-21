@@ -67,7 +67,7 @@ A von Mises-Fisher variant (spherical KDE over mesh points rather than normals) 
 
 ### Neural network
 
-A fully-connected network (default: `Net5`, five hidden layers: 256 → 128 → 64 → 32 → n_classes) takes the NVD vector as input and outputs class logits. The architecture is lightweight and trains in minutes on a CPU. Additional architectures (`Net3`, `Net4`, `Net6`, `Net6mandibula`) are available in `src/model.py`.
+A fully-connected network (default: `Net5`, five hidden layers: 256 → 128 → 64 → 32 → n_classes) takes the NVD vector as input and outputs class logits. The architecture is lightweight and trains in minutes on a CPU. Additional architectures (`Net3`, `Net4`, `Net6`) are available in `src/model.py`.
 
 ### Feature Prominence score
 
@@ -342,7 +342,7 @@ To add coronal synostosis, set `deformation: all` in `config.yaml`. The class ma
 all  →  control=0, metopic=1, sagittal=2, coronal=3
 ```
 
-For a different anatomy (e.g. the mandible), use `Net6mandibula` in `src/model.py` and set `input_features` to match the vertex count of your resampled meshes. The hardcoded `x.view(-1, N)` in each model's `forward` method must match `input_features`.
+For a different dataset, it is recommended to define a custom `Net` under `src/model.py` and set `input_features` to match the vertex count of your resampled meshes. The hardcoded `x.view(-1, N)` in each model's `forward` method must match `input_features`.
 
 ---
 
