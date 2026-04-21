@@ -1,0 +1,19 @@
+experiment:
+  name: Net5_metopic_21042026   # used as the experiment folder name
+  notes: "Baseline Net5, no augmentation, KDE features, metopic+control"
+
+paths:
+  data_folder: ./data/synth_data_CN/metopic_normal
+  results_dir: ./results   # experiment subfolder is created automatically inside here
+
+model:
+  input_features: 4515
+  deformation: metopic  # sagittal | metopic | both | all
+
+training:
+  batch_size: 16
+  epochs: 75
+  patience: 10
+  lr: 0.01
+  momentum: 0.9
+  seed: 42
