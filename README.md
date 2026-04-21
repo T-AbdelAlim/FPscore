@@ -15,4 +15,6 @@ NOTE: An optimized version is currently under development.
 **Paper:** [Quantifying Dysmorphologies of the Neurocranium Using Artificial Neural Networks](https://onlinelibrary.wiley.com/doi/10.1111/joa.14061)   
 
 ## Source Code
-**Status:** Repository in progress, release pending.
+**Status:** Validation on clinical datasets in progress.
+
+Contact author for early access to the code and trained models on **synthetic** data (used in presented study). Do not use synthetic models for the assessment of patient data. 
