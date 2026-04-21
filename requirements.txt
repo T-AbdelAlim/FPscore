@@ -1,0 +1,30 @@
+# Deep learning
+# The +cu118 builds are hosted on PyTorch's own index, not PyPI.
+# CPU-only alternative: replace the three lines below with just `torch==2.5.1`
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.5.1+cu118
+torchaudio==2.5.1+cu118
+torchvision==0.20.1+cu118
+
+# 3D mesh processing
+# pyacvd has no pre-built wheel for Python 3.11 on Windows when pinned to 0.2.8.
+# If `pip install -r requirements.txt` fails on pyacvd, use conda instead:
+#   conda install -c conda-forge pyacvd
+pyvista==0.37.0
+pyacvd
+vtk==9.3.1
+
+# Numerical / scientific
+numpy==1.25.2
+scipy==1.13.1
+scikit-learn==1.5.1
+spherical_kde==0.1.2
+
+# Plotting
+matplotlib==3.7.0
+seaborn==0.13.2
+
+# Data
+pandas==2.2.3
+tqdm==4.64.1
+pyyaml
